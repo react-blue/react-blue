@@ -1,0 +1,5 @@
+# lerna and packages
+node_modules
+
+# except test library
+packages/ui-test
