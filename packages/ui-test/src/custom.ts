@@ -1,4 +1,4 @@
-import { CustomTheme } from "theme";
+import { CustomTheme } from "lib";
 
 export const customTheme: CustomTheme = {
   colors: {

@@ -1,7 +1,7 @@
 import React from "react";
-import { ThemeProvider } from "theme";
-import { customTheme, customIcons } from "custom";
+import { ThemeProvider } from "lib";
 import { Button, Text, Icon } from "components";
+import { customTheme, customIcons } from "custom";
 
 function App() {
   const buttons = Object.keys(customTheme.button);

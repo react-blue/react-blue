@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-
-import { useThemeConfig, ComponentProps } from "theme/config";
+import { useThemeConfig, ComponentProps } from "lib";
 
 export interface IconProps extends ComponentProps {
   svg?: string;

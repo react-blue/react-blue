@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useMemo } from "react";
 import styled from "@emotion/styled";
 
-import { useThemeConfig, ComponentProps } from "theme/config";
-import { useMemo } from "react";
+import { useThemeConfig, ComponentProps } from "lib";
 
 export interface TextProps extends ComponentProps {
   children: React.ReactNode | React.ReactNodeArray;

@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import { useThemeConfig, ComponentProps } from "theme/config";
+import { useThemeConfig, ComponentProps } from "lib";
 
 export interface ButtonProps extends ComponentProps {
   children: React.ReactNode | React.ReactNodeArray;

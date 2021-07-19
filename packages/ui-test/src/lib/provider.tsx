@@ -6,7 +6,7 @@ import {
   Global as EmotionGlobal,
   css,
 } from "@emotion/react";
-import { normalize } from "./css";
+import normalize from "./normalize";
 
 export type CustomThemeColors = { [key: string]: string };
 export type CustomThemeComponents = {
@@ -30,7 +30,7 @@ export interface ThemeProviderProps extends EmotionThemeProviderProps {
   global?: CSSInterpolation;
 }
 
-export const createGlobal = (...props: Array<CSSInterpolation>) =>
+export const createGlobal = (props: CSSInterpolation) =>
   css`
     ${`${normalize}${props}` || `${normalize}`}
   `;
