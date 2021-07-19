@@ -12,7 +12,7 @@ export const Button = ({
   children,
   ...props
 }: ButtonProps): JSX.Element => {
-  const themeCSS = useThemeConfig({ ...props, tag: "button" });
+  const themeCSS = useThemeConfig({ ...props, component: "button" });
   return (
     <ButtonJSX className={className} themeCSS={themeCSS} {...props}>
       {children}

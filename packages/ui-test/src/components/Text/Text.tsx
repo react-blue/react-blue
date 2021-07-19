@@ -12,7 +12,7 @@ export const Text = ({
   children,
   ...props
 }: TextProps): JSX.Element => {
-  const themeCSS = useThemeConfig({ ...props, tag: "text" });
+  const themeCSS = useThemeConfig({ ...props, component: "text" });
   const TextJSX = useMemo(() => createTextJSX(getTextTag(props)), [props]);
 
   return (

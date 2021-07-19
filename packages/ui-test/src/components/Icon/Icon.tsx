@@ -11,7 +11,7 @@ export const Icon = ({
   svg,
   ...props
 }: IconProps): JSX.Element | null => {
-  const themeCSS = useThemeConfig({ ...props, tag: "icon" });
+  const themeCSS = useThemeConfig({ ...props, component: "icon" });
   if (!svg) return null;
 
   return (
