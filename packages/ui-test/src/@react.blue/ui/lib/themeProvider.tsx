@@ -9,16 +9,17 @@ import {
 import normalize from "./normalize";
 
 export type CustomThemeColors = { [key: string]: string };
-export type CustomThemeComponents = {
-  [theme: string]: React.CSSProperties;
+export type CustomThemeComponentProps = {
+  [theme: string]: CSSInterpolation;
 };
 
 export type CustomTheme = {
   colors: CustomThemeColors;
-  button: CustomThemeComponents;
-  text: CustomThemeComponents;
-  icon: CustomThemeComponents;
-  // [key: string]: string | { [theme: string]: string | React.CSSProperties };
+  button: CustomThemeComponentProps;
+  text: CustomThemeComponentProps;
+  icon: CustomThemeComponentProps;
+  input: CustomThemeComponentProps;
+  box: CustomThemeComponentProps;
 };
 
 declare module "@emotion/react" {

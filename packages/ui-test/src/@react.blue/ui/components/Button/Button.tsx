@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-import { useThemeConfig, ComponentProps } from "lib";
+import { useThemeConfig, ComponentProps } from "@react.blue/ui";
 
 export interface ButtonProps extends ComponentProps {
-  children: React.ReactNode | React.ReactNodeArray;
+  icon?: boolean;
 }
 
 export const Button = ({
@@ -24,5 +24,8 @@ const ButtonJSX = styled.button<ButtonProps>`
   outline: none;
   border: 0;
   background-color: transparent;
+  ${(props) =>
+    props.icon &&
+    `display: flex; align-items: center; justify-content: center;`}
   ${(props) => props.themeCSS};
 `;

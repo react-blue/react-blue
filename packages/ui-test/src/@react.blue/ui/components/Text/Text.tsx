@@ -1,11 +1,9 @@
 import React, { useMemo } from "react";
 import styled from "@emotion/styled";
 
-import { useThemeConfig, ComponentProps } from "lib";
+import { useThemeConfig, ComponentProps } from "@react.blue/ui";
 
-export interface TextProps extends ComponentProps {
-  children: React.ReactNode | React.ReactNodeArray;
-}
+export interface TextProps extends ComponentProps {}
 
 export const Text = ({
   className,
